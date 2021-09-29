@@ -36,7 +36,7 @@ namespace BookStore.Controllers
                 {
                     Session["UserName"] = user.FirstOrDefault().Email;
                     Session["UserID"] = user.FirstOrDefault().ID;
-                    return Redirect("/home/welcomepage");
+                    return Redirect("/books");
                 }
                 else
                 {
